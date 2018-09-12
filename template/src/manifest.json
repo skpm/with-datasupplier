@@ -16,9 +16,6 @@
         }
     ],
     "menu": {
-        "title": "foobar",
-        "items": [
-            "my-command-identifier"
-        ]
+        "title": "foobar"
     }
 }
