@@ -5,7 +5,7 @@
   "suppliesData": true,
   "commands": [
     {
-      "script": "my-command.js",
+      "script": "./my-command.js",
       "handlers": {
         "actions": {
           "Startup": "onStartup",
@@ -16,6 +16,6 @@
     }
   ],
   "menu": {
-    "title": "foobar"
+    "title": "{{ name }}"
   }
 }

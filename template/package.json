@@ -1,25 +1,26 @@
 {
-  "name": "foobar",
+  "name": "{{ slug }}",
   "version": "0.1.0",
   "description": "A DataSupplier plugin",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "foobar",
+    "name": "{{ name }}",
     "manifest": "src/manifest.json",
-    "main": "plugin.sketchplugin",
+    "main": "{{ slug }}.sketchplugin",
     "assets": [
       "assets/**/*"
-    ]
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
   },
   "scripts": {
     "build": "skpm-build",
     "watch": "skpm-build --watch",
-    "start": "skpm-build --watch --run",
+    "start": "skpm-build --watch",
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.5.2"
+    "@skpm/builder": "^0.7.4",
   }
 }
